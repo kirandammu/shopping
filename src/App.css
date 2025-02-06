@@ -1,0 +1,380 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+ 
+}
+    /* ----------Navbar---------- */
+nav{
+  display: flex;
+  width: 100vw;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 5px 4%;
+  box-shadow: 1px 0 3px black;
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+nav .logo{
+  display: flex;
+  align-items: center;
+}
+.logo img{
+  width: 60px;
+}
+.logo h1{
+  font-size: 24px;
+  color: red;
+  margin-left: 8px;
+}
+nav .nav-menu{
+  display: flex;
+  list-style: none;
+
+}
+.nav-menu li{
+  margin: 3px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.nav-menu li hr{
+  background-color: red;
+  border: none;
+  outline: none;
+  width: 90%;
+  height: 2px;
+  border-radius: 10px;
+}
+nav .logout{
+  display: flex;
+}
+.logout button{
+  width: 100px;
+  border-radius: 10px;
+  height: 30px;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid red;
+  margin: 2px 40px;
+  cursor: pointer;
+}
+.logout .cart{
+  width: 40px;
+  position: relative;
+}
+.logout .cart img{
+  width: 100%;
+}
+.logout .cart p{
+  width: 18px;
+  height: 18px;
+  background-color: red;
+  color: white;
+  border-radius: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -6px;
+  right: -10px;
+  font-size: 14px;
+}
+      /* -------hero--------- */
+
+
+  .shops{
+    width: 100vw;
+    padding: 0px 4%;
+  }
+.hero{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px 3%;
+  height: 90vh;
+  background: linear-gradient(rgb(48, 230, 230),white);
+}
+.hero .hero-left{
+  flex-basis: 40%;
+  
+}
+.hero-left h2{
+  margin-left: 40px;
+}
+.hero-left p{
+  font-size: 60px;
+  font-weight: bold;
+  margin-left: 40px;
+}
+.hero-left img{
+  width: 50px;
+  margin-left: 10px;
+}
+.hero-left span{
+  margin-left: 40px;
+  width: 200px;
+  margin-top: 10px;
+  height: 50px;
+  background-color: red;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.hero-left span img{
+  width: 25px;
+  padding: 3px;
+  margin-left: 10px;
+}
+.hero .hero-right{
+  flex-basis: 40%;
+  
+}
+.hero-right img{
+  width: 80%;
+}
+
+    /* -------Item------- */
+
+.item{
+  width:270px;
+  cursor: pointer;
+  border: 1px solid silver;
+  border-radius: 5px;
+}
+
+.item:hover{
+  transform: scale(1.04);
+  transition: 0.4s;
+  border-radius: 6px;
+  box-shadow: 1px 1px 1px black, -1px -1px 1px black;
+}
+.item img{
+  width: 270px;
+  border-radius: 6px;
+}
+.item p{
+  margin: 5px 0px;
+}
+.item-prices{
+  display: flex;
+  gap: 20px;
+}
+.new-price{
+  color: rgb(15, 33, 237);
+  font-size: 22px;
+  font-weight: 600;
+}
+.old-price{
+  color: rgb(86, 79, 79);
+  font-size: 18px;
+  text-decoration: line-through;
+}
+.item.hover{
+  transform: scale(1.06);
+  transition: 0.5s;
+}
+    /* -------Popular------- */
+
+.popular{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.popular h1{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+}
+.popular hr{
+  width: 350px;
+  display: flex;
+  height: 3px;
+  border: none;
+  background-color: black;
+}
+.popular-item{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+  gap:30px;
+}
+
+    /* -------Newss------- */
+
+.newss{
+  display: flex;
+  background: linear-gradient(rgb(48, 230, 230),white);
+  flex-direction: column;
+  align-items: center;
+  padding: 80px;
+}
+.newss p{
+  font-size: 20px;
+  margin: 15px;
+}
+.newss .mail{
+  display: flex;
+  width: 500px;
+  background-color: white;
+  justify-content: space-between;
+  border: 1px solid rgb(119, 117, 117);
+  border-radius: 25px;
+}
+.newss .mail input{
+  width: 380px;
+  height: 50px;
+  outline: none;
+  border: none;
+  border-radius: 25px 0 0 25px;
+  padding: 2px 10px;
+  
+}
+.newss .mail button{
+  width: 150px;
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  z-index: 2;
+  border-radius: 25px;
+}
+
+    /* -------Footer------- */
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer .logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.footer ul{
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 20px;
+  cursor: pointer;
+}
+.footer .icons{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin: 20px;
+  cursor: pointer;
+  
+}
+.icons img{
+  border: 1px solid silver;
+  border-radius: 5px;
+  padding: 2px;
+  background-color: #b8ffff;
+}
+.footer p{
+  border-top: 1px solid black;
+  margin: 20px;
+  padding: 20px;
+  width: 85%;
+  display: flex;
+  justify-content: center;
+}
+    /* -------Signup------- */
+
+.signup{
+  background: linear-gradient(#30e6e6,white);
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container{
+  width: 500px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 1px 1px 2px black, -1px -1px 2px black;
+}
+.container .fields input{
+  width: 320px;
+  height: 40px;
+  margin: 3px;
+  background-color: white;
+  border: 1px solid #30e6e6;
+  outline: none;
+  padding: 3px 13px;
+  border-radius: 5px;
+}
+.container button{
+  width: 320px;
+  height: 40px;
+  margin: 3px;
+  background-color: #30e6e6;
+  border: 1px solid #30e6e6;
+  border-radius: 5px;
+  font-size: 17px;
+  cursor: pointer;
+}
+.container .login{
+  font-size: 14px;
+  margin: 6px;
+  margin-left: -70px;
+
+}
+.container .agree{
+  font-size: 13px;
+  margin: 6px;
+  margin-left: 40px;
+}
+.login span{
+color: red;
+cursor: pointer;
+}
+
+/* ---------ShopCategory-------- */
+
+.shop-category{
+  width: 100vw;
+  padding: 5px 4%;
+}
+.shop-category .banner{
+  width: 100%;
+}
+.shop-category .indexsort{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+.indexsort .sort{
+  width: 90px;
+  background-color: #d4d7d7;
+  padding: 7px;
+  border-radius: 30px;
+}
+.shop-category .products{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
